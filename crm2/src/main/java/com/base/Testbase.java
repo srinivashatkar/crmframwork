@@ -48,7 +48,7 @@ public class Testbase {
 		else if (browsername.equalsIgnoreCase("Edge")) {
 
 			System.setProperty("webdriver.edge.driver",
-					"C:\\Users\\dell\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+					"C:\\Users\\dell\\Downloads\\edgedriver_win64(1)\\msedgedriver.exe");
 					
 
 			driver = new EdgeDriver();
