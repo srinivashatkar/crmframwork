@@ -1,7 +1,23 @@
 browser=edge
 
 url=http://empirehome.myprojectsonline.co.in/
-
-
 username=sureshbabuemp@gmail.com
 password=ZPMHQHIA
+
+
+Movefrom=Warehouse
+Moveto=Showroom
+Modelno=SS-03
+Quantity=18
+Note=Dressingtable
+Notes=Dtable
+
+date=12102023
+hname=dasara
+desc=monday
+cname=childrensday
+cdate=14112023
+cdesc=tuesday
+
+
+
