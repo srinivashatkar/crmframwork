@@ -34,7 +34,7 @@ public class Login_functionality extends Testbase {
 	
 	
 	
-	public Homepage Dologin() {
+	public Homepage Dologin() throws Throwable {
 		
 	username.sendKeys(props.getProperty("username"));	
 	password.sendKeys(props.getProperty("password"));
@@ -46,10 +46,10 @@ public class Login_functionality extends Testbase {
 }
 	
 	
-	public Homepage DologinwithExcel(String Username,String Password) {
+	public Homepage DologinwithExcel(String Username,String Password) throws Throwable {
 		
-	username.sendKeys(("Username"));	
-	password.sendKeys(("Password"));
+	username.sendKeys((Username));	
+	password.sendKeys((Password));
 	
 	loginbutton.click();
 	
