@@ -25,6 +25,10 @@ public Homepage() throws Throwable {
 	WebElement master; 
 		@FindBy(xpath="//a[@href='/Master/Usertypes']")
 		WebElement usertype;
+		private WebElement customer;
+		private WebElement addcustomer;
+		private WebElement allcustomer;
+		private WebElement location;
     public Homepage(WebDriver driver)throws Throwable
     {
     	PageFactory.initElements(driver,this);
@@ -45,9 +49,46 @@ public Homepage() throws Throwable {
     
 		
 	}
-	public void holidays() {
+	public Holidays holidays()throws Throwable {
 		// TODO Auto-generated method stub
 		
+		
+			Utils.moveToElement(master);
+			Holidays.click();
+			return new Holidays();
+			
+	}
+	public void usertype() {
+		Utils.moveToElement(master);
+    	usertype.click();
+		 
+		
+	}
+	public void addcustomer() {
+		// TODO Auto-generated method stub
+		Utils.moveToElement(customer);
+		addcustomer.click();
+	}
+	public void editcustomer() {
+		// TODO Auto-generated method stub
+		Utils.moveToElement(customer);
+		allcustomer.click();
+	
+	}
+	//public Location location() {
+	
+	//		Utils.moveToElement(master);
+	//		location.click();
+//			return  new Location();
+	//	}
+	public Location location() throws Throwable {
+		
+			Utils.moveToElement(master);
+			location.click();
+			return  new Location();
+		}
+	
+        
 	}
  
 	
@@ -58,7 +99,7 @@ public Homepage() throws Throwable {
 	
 
 		
-	}
+	
  
 
 	
